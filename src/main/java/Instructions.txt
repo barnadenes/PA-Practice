@@ -1,0 +1,3 @@
+Refridgerator: create "food", drinks, edibles, egg, etc. the user can consume it,
+calorie values are added to the user's calorie intake, stats can be checked how many calories have been consumed,
+when the fridge is closed you can't take out stuff, etc.
