@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Food>
+    <Meats>
+        <Meat name="csirke" foodType="hus" calories="LARGE" amount="10"/>
+        <Meat name="hal" foodType="hus" calories="SMALL" amount="4"/>
+        <Meat name="medve" foodType="hus" calories="MEDIUM" amount="2"/>
+        <Meat name="strucc" foodType="hus" calories="SMALL" amount="6"/>
+    </Meats>
+    <Vegetables>
+        <Vegetable name="brokkoli" foodType="zoldseg" calories="SMALL" amount="3"/>
+        <Vegetable name="uborka" foodType="zoldseg" calories="SMALL" amount="2"/>
+        <Vegetable name="hagyma" foodType="zoldseg" calories="SMALL" amount="2"/>
+        <Vegetable name="salata" foodType="zoldseg" calories="SMALL" amount="1"/>
+    </Vegetables>
+</Food>

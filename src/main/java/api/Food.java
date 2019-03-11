@@ -2,7 +2,7 @@ package api;
 
 import api.Enums.Portion;
 
-public abstract class Food{
+public class Food{
     private String name;
     private String foodType;
     private Portion calories;
