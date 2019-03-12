@@ -57,11 +57,11 @@ public class Vegetable extends Food implements Edible {
 
     @Override
     public String toString() {
-        return "Vegetable{" +
-                "name='" + name + '\'' +
-                ", foodType='" + foodType + '\'' +
-                ", calories=" + calories +
-                ", amount=" + amount +
-                '}';
+        return "Zoldseg: \n" +
+                " nev: " + name + "\n" +
+                " eteltipus: " + foodType + "\n" +
+                " kcal: " + calories.getCalories() + "\n" +
+                " mennyiseg: " + amount +
+                "\n\n";
     }
 }

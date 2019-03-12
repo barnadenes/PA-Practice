@@ -45,7 +45,7 @@ public class Refridgerator {
         {
             if(food instanceof Meat)
             {
-                meatList += "\t" + food.getName() + "\n";
+                meatList += "\t" + food.getName() + "husibol " + food.getAmount() + " darab van a hűtőben.\n";
             }
         }
         return meatList;
@@ -58,7 +58,7 @@ public class Refridgerator {
         {
             if(food instanceof Vegetable)
             {
-                vegetableList += "\t" + food.getName() + "\n";
+                vegetableList += "\t" + food.getName() + "bol " + food.getAmount() + " darab van a hűtőben.\n";
             }
         }
         return vegetableList;
@@ -71,7 +71,7 @@ public class Refridgerator {
         {
             if(food instanceof Drink)
             {
-                drinkList += "\t" + food.getName() + "\n";
+                drinkList += "\t" + food.getName() + "bol " + food.getAmount() + " darab van a hűtőben.\n";
             }
         }
         return drinkList;

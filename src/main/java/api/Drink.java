@@ -32,10 +32,14 @@ public class Drink extends Food implements Edible {
 
     @Override
     public String toString() {
-        return "Drinks{" +
-                "brand='" + brand + '\'' +
-                ", alcoholContent=" + alcoholContent +
-                '}';
+        return "Italok: \n" +
+                " nev: " + name + "\n" +
+                " eteltipus: " + foodType + "\n" +
+                " kcal: " + calories.getCalories() + "\n" +
+                " mennyiseg: " + amount + "\n" +
+                " gyarto: "  + brand + "\n" +
+                " alkoholtartalom: " + alcoholContent + "%" +
+                "\n\n";
     }
 
     public boolean edible() {

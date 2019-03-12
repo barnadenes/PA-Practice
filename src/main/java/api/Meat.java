@@ -55,11 +55,11 @@ public class Meat extends Food implements Edible {
 
     @Override
     public String toString() {
-        return "Meat{" +
-                "name='" + name + '\'' +
-                ", foodType='" + foodType + '\'' +
-                ", calories=" + calories +
-                ", amount=" + amount +
-                '}';
+        return "Husi: \n" +
+                " nev: " + name + "\n" +
+                " eteltipus: " + foodType + "\n" +
+                " kcal: " + calories.getCalories() + "\n" +
+                " mennyiseg: " + amount +
+                "\n\n";
     }
 }
