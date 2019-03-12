@@ -15,7 +15,18 @@ public class UI {
         this.reader = new Scanner(System.in);
     }
 
+public void header() {
+    System.out.println("==================");
+    System.out.println(" Fridge Simulator ");
+    System.out.println("==================");
+    System.out.println();
 
+}
+
+
+public void information() {
+
+}
 
 
 }
