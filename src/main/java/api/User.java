@@ -38,6 +38,14 @@ public class User {
         foodInFridge.add(food);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getCalories() {
+        return calories;
+    }
+
     @Override
     public String toString() {
         return "Név: " + name  +
