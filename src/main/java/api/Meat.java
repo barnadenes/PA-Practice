@@ -34,7 +34,7 @@ public class Meat extends Food implements Edible {
     }
 
     @Override
-    public Portion getCalories() {
+    public int getCalories() {
         return super.getCalories();
     }
 

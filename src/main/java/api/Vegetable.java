@@ -36,7 +36,7 @@ public class Vegetable extends Food implements Edible {
     }
 
     @Override
-    public Portion getCalories() {
+    public int getCalories() {
         return super.getCalories();
     }
 

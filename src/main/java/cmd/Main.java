@@ -1,13 +1,16 @@
 package cmd;
 
 import api.*;
+import api.Exceptions.EmptyFridgeException;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws EmptyFridgeException {
+        //Later to be added to UI class!!!!!!!
+
         XmlLoader xml = new XmlLoader();
         List<Food> fridge = new ArrayList<Food>();
 

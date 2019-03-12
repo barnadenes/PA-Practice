@@ -33,8 +33,8 @@ public abstract class Food{
         this.foodType = foodType;
     }
 
-    public Portion getCalories() {
-        return calories;
+    public int getCalories() {
+        return calories.getCalories();
     }
 
     public void setCalories(Portion calories) {
