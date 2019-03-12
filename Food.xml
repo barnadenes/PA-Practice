@@ -12,4 +12,10 @@
         <Vegetable name="hagyma" foodType="zoldseg" calories="SMALL" amount="2"/>
         <Vegetable name="salata" foodType="zoldseg" calories="SMALL" amount="1"/>
     </Vegetables>
+    <Drinks>
+        <Drink name="sör" foodType="innivalo" calories="SMALL" amount="50" brand="kozel" alcohol="4"/>
+        <Drink name="coke" foodType="innivalo" calories="SMALL" amount="2" brand="kozel" alcohol="0"/>
+        <Drink name="monster" foodType="innivalo" calories="SMALL" amount="40" brand="kozel" alcohol="0"/>
+        <Drink name="pálinka" foodType="innivalo" calories="SMALL" amount="1" brand="kozel" alcohol="45"/>
+    </Drinks>
 </Food>

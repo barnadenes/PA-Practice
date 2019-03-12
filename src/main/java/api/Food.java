@@ -2,11 +2,13 @@ package api;
 
 import api.Enums.Portion;
 
-public class Food{
-    private String name;
-    private String foodType;
-    private Portion calories;
-    private int amount;
+import java.util.Objects;
+
+public abstract class Food{
+    protected String name;
+    protected String foodType;
+    protected Portion calories;
+    protected int amount;
 
     public Food(String name, String foodType, Portion calories, int amount) {
         this.name = name;
@@ -56,4 +58,13 @@ public class Food{
                 ", amount=" + amount +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Food)) return false;
+        Food food = (Food) o;
+        return getName().equals(food.getName());
+    }
+
 }

@@ -61,6 +61,23 @@ public class XmlLoader {
         return result;
     }
 
+    public List<Drink> getDrinks() {
+        Element casesElement = (Element) components.getElementsByTagName("Drinks").item(0);
+        NodeList cases = casesElement.getElementsByTagName("Drink");
+        List<Drink> result = new ArrayList<Drink>();
+        Element current;
+        for (int i = 0; i < cases.getLength(); i++) {
+            current = (Element) cases.item(i);
+            result.add(new Drink(current.getAttribute("name"),
+                    current.getAttribute("foodType"),
+                    Portion.valueOf(current.getAttribute("calories")),
+                    Integer.parseInt(current.getAttribute("amount")),
+                    current.getAttribute("brand"),
+                    Integer.parseInt(current.getAttribute("alcohol"))
+            ));
+        }
+        return result;
+
     /*List<PowerSupply> getPsus() {
         Element psusElement = (Element) components.getElementsByTagName("PowerSupplies").item(0);
         NodeList psus = psusElement.getElementsByTagName("PowerSupply");
@@ -235,4 +252,5 @@ public class XmlLoader {
         return result;
     }*/
 
+    }
 }

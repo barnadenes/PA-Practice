@@ -1,19 +1,42 @@
 package cmd;
 
-import api.XmlLoader;
-import org.xml.sax.SAXException;
+import api.*;
 
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-       /* XmlLoader xml = new XMLparser();
-        System.out.println(xml.kaja("Food.xml"));*/
+        XmlLoader xml = new XmlLoader();
+        List<Food> fridge = new ArrayList<Food>();
+        /*for(int i = 0; i < xml.getMeat().size(); i++){
+            fridge.add(xml.getMeat().get(i));
+        }
+        for(int i = 0; i < xml.getVegetable().size(); i++){
+            fridge.add(xml.getVegetable().get(i));
+        }
+        for(int i = 0; i < xml.getDrinks().size(); i++){
+            fridge.add(xml.getDrinks().get(i));
+        }*/
+        fridge.addAll(xml.getMeat());
+        fridge.addAll(xml.getVegetable());
+        fridge.addAll(xml.getDrinks());
 
-       XmlLoader xml = new XmlLoader();
-        System.out.println(xml.getMeat());
-        System.out.println(xml.getVegetable());
+
+
+
+
+        Refridgerator refridgerator = new Refridgerator(fridge);
+
+        System.out.println(refridgerator.showMeatinFridge());
+        System.out.println(refridgerator.showVegetableinFridge());
+        System.out.println( refridgerator.showDrinksinFridge());
+
+
+
+
+
     }
 }

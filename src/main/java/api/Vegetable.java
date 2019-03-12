@@ -12,19 +12,56 @@ public class Vegetable extends Food implements Edible {
 
     //if fridge is off then its false;
     public boolean edible() {
-        return false;
+        return true;
     }
 
-    /*public boolean isState() {
-        if(this.state.equals("raw".toLowerCase()))
-        {
-            return true;
-        }
-        return false;
-    }*/
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
+
+    @Override
+    public String getFoodType() {
+        return super.getFoodType();
+    }
+
+    @Override
+    public void setFoodType(String foodType) {
+        super.setFoodType(foodType);
+    }
+
+    @Override
+    public Portion getCalories() {
+        return super.getCalories();
+    }
+
+    @Override
+    public void setCalories(Portion calories) {
+        super.setCalories(calories);
+    }
+
+    @Override
+    public int getAmount() {
+        return super.getAmount();
+    }
+
+    @Override
+    public void setAmount(int amount) {
+        super.setAmount(amount);
+    }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Vegetable{" +
+                "name='" + name + '\'' +
+                ", foodType='" + foodType + '\'' +
+                ", calories=" + calories +
+                ", amount=" + amount +
+                '}';
     }
 }
