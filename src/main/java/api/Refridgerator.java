@@ -1,7 +1,7 @@
 package api;
 
 import java.util.List;
-
+import api.Exceptions.*;
 import java.util.Iterator;
 
 public class Refridgerator {
@@ -38,7 +38,11 @@ public class Refridgerator {
         return fridge;
     }
 
-    public String showMeatinFridge() {
+    public String showMeatinFridge() throws EmptyFridgeException {
+        if(fridge == null)
+        {
+            throw new EmptyFridgeException("The fridge is empty");
+        }
         String meatList ="Meat: \n";
 
         for(Food food : fridge)
@@ -51,7 +55,11 @@ public class Refridgerator {
         return meatList;
     }
 
-    public String showVegetableinFridge() {
+    public String showVegetableinFridge() throws EmptyFridgeException {
+        if(fridge == null)
+        {
+            throw new EmptyFridgeException("The fridge is empty");
+        }
         String vegetableList = "Vegetable: " + "\n";
 
         for(Food food : fridge)
@@ -64,7 +72,11 @@ public class Refridgerator {
         return vegetableList;
     }
 
-    public String showDrinksinFridge() {
+    public String showDrinksinFridge() throws EmptyFridgeException {
+        if(fridge == null)
+        {
+            throw new EmptyFridgeException("The fridge is empty");
+        }
         String drinkList ="Drink: \n";
 
         for(Food food : fridge)
